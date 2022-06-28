@@ -1,0 +1,12 @@
+.breadcrumb-item a {
+  text-decoration: none;
+  color: #867b90;
+}
+
+.span-custum {
+  margin-right: 12px;
+}
+
+.btn-carrito {
+  margin-left: 12px;
+}
