@@ -19,7 +19,7 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css"
     />
     <link rel="stylesheet" href="css/main.css" />
-    <title>Document</title>
+    <title>Mercados del norte</title>
   </head>
   <body>
     <header>
@@ -55,21 +55,29 @@
                 aria-label="Search"
               />
               <button class="btn btn-outline-info" type="submit">
-                <span class="material-icons"> search </span>
+                <span class="material-icons mt-2"> search </span>
               </button>
             </form>
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
+              <li class="nav-item mx-3">
                 <a class="nav-link" href="#"><i class="bi bi-person"></i></a>
+                Entrar
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#"><i class="bi bi-cart"></i></a>
+                <span
+                  class="position-absolute translate-middle badge rounded-pill bg-danger contador-span"
+                >
+                  0
+                  <span class="visually-hidden">unread messages</span>
+                </span>
+                Mi carrito
               </li>
             </ul>
           </div>
         </div>
       </nav>
-      <nav class="nav nav-custom">
+      <!-- <nav class="nav nav-custom">
         <li class="nav-item dropdown">
           <a
             class="nav-link dropdown-toggle text-white"
@@ -90,6 +98,58 @@
         <a class="nav-link text-white" href="#">Link</a>
         <a class="nav-link text-white" href="#">Link</a>
         <a class="nav-link text-white">Link</a>
+      </nav> -->
+
+      <nav class="menu" id="menu">
+        <div class="contenedor contenedor-botones-menu">
+          <button class="btn-menu-barra" id="btn-menu-barras">
+            <i class="bi bi-list"></i>
+          </button>
+          <button class="btn-menu-barra" id="btn-menu-cerrar">
+            <i class="bi bi-x-lg"></i>
+          </button>
+        </div>
+
+        <div class="contenedor contenedor-enlaces-nav">
+          <div class="btn-departamento" id="btn-departamento">
+            <i class="bi bi-list"></i>
+            <span>Departamentos</span>
+          </div>
+
+          <div class="contenedor contenedor-grid">
+            <div class="grid" id="grid">
+              <div class="categorias">
+                <button class="btn-regresar">
+                  <i class="bi bi-arrow-left"></i> Regresar
+                </button>
+                <h3 class="subtitulo">Departamentos</h3>
+
+                <a href="" data-categoria="Departamento1"
+                  >Departamento #1 <i class="bi bi-chevron-right"></i
+                ></a>
+                <a href="" data-categoria="Departamento2"
+                  >Departamento #2 <i class="bi bi-chevron-right"></i
+                ></a>
+                <a href="" data-categoria="Departamento3"
+                  >Departamento #3 <i class="bi bi-chevron-right"></i
+                ></a>
+                <a href="" data-categoria="Departamento4"
+                  >Departamento #4 <i class="bi bi-chevron-right"></i
+                ></a>
+                <a href="" data-categoria="Departamento5"
+                  >Departamento #5 <i class="bi bi-chevron-right"></i
+                ></a>
+                <a href="" data-categoria="Departamento5"
+                  >Departamento #6 <i class="bi bi-chevron-right"></i
+                ></a>
+                <a href="" data-categoria="Departamento6"
+                  >Departamento #7 <i class="bi bi-chevron-right"></i
+                ></a>
+              </div>
+              <div class="contenedor-subcategoria"></div>
+            </div>
+          </div>
+        </div>
       </nav>
     </header>
     <div class="container container-custom">
@@ -145,324 +205,43 @@
         <h3 class="mb-2">
           Productos de belleza <small><a href="">Ver mas</a></small>
         </h3>
-        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+        <div
+          id="carouselExampleIndicators"
+          class="carousel slide"
+          data-bs-ride="true"
+        >
           <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-          </div>
-          <div class="carousel-inner">
-       <div class="carousel-item active">
-       <div class="row">
-          <div class="col-12 col-md-2">
-            <div class="card">
-              <img
-                src="img/61OXDDas0EL._SL1500_.jpg"
-                class="card-img-top"
-                alt="..."
-              />
-              <div class="card-body">
-                <h6 class="card-title">
-                  <a href="">Descripción del producto</a>
-                </h6>
-                <p class="">Precio</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-md-2">
-            <div class="card">
-              <img
-                src="img/Tratamiento Fortificante Protección Calor Redken Extreme Playsafe 200m.jpg"
-                class="card-img-top"
-                alt="..."
-              />
-              <div class="card-body">
-                <h6 class="card-title">
-                  <a href="">Descripción del producto</a>
-                </h6>
-                <p class="">Precio</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-md-2">
-            <div class="card">
-              <img
-                src="img/61OXDDas0EL._SL1500_.jpg"
-                class="card-img-top"
-                alt="..."
-              />
-              <div class="card-body">
-                <h6 class="card-title">
-                  <a href="">Descripción del producto</a>
-                </h6>
-                <p class="">Precio</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-md-2">
-            <div class="card">
-              <img
-                src="img/Tratamiento Fortificante Protección Calor Redken Extreme Playsafe 200m.jpg"
-                class="card-img-top"
-                alt="..."
-              />
-              <div class="card-body">
-                <h6 class="card-title">
-                  <a href="">Descripción del producto</a>
-                </h6>
-                <p class="">Precio</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-md-2">
-            <div class="card">
-              <img
-                src="img/61OXDDas0EL._SL1500_.jpg"
-                class="card-img-top"
-                alt="..."
-              />
-              <div class="card-body">
-                <h6 class="card-title">
-                  <a href="">Descripción del producto</a>
-                </h6>
-                <p class="">Precio</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-md-2">
-            <div class="card">
-              <img
-                src="img/Tratamiento Fortificante Protección Calor Redken Extreme Playsafe 200m.jpg"
-                class="card-img-top"
-                alt="..."
-              />
-              <div class="card-body">
-                <h6 class="card-title">
-                  <a href="">Descripción del producto</a>
-                </h6>
-                <p class="">Precio</p>
-              </div>
-            </div>
-          </div>
-        </div>
-            </div>
-            <div class="carousel-item">
-              <div class="row">
-          <div class="col-12 col-md-2">
-            <div class="card">
-              <img
-                src="img/61OXDDas0EL._SL1500_.jpg"
-                class="card-img-top"
-                alt="..."
-              />
-              <div class="card-body">
-                <h6 class="card-title">
-                  <a href="">Descripción del producto</a>
-                </h6>
-                <p class="">Precio</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-md-2">
-            <div class="card">
-              <img
-                src="img/Tratamiento Fortificante Protección Calor Redken Extreme Playsafe 200m.jpg"
-                class="card-img-top"
-                alt="..."
-              />
-              <div class="card-body">
-                <h6 class="card-title">
-                  <a href="">Descripción del producto</a>
-                </h6>
-                <p class="">Precio</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-md-2">
-            <div class="card">
-              <img
-                src="img/61OXDDas0EL._SL1500_.jpg"
-                class="card-img-top"
-                alt="..."
-              />
-              <div class="card-body">
-                <h6 class="card-title">
-                  <a href="">Descripción del producto</a>
-                </h6>
-                <p class="">Precio</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-md-2">
-            <div class="card">
-              <img
-                src="img/Tratamiento Fortificante Protección Calor Redken Extreme Playsafe 200m.jpg"
-                class="card-img-top"
-                alt="..."
-              />
-              <div class="card-body">
-                <h6 class="card-title">
-                  <a href="">Descripción del producto</a>
-                </h6>
-                <p class="">Precio</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-md-2">
-            <div class="card">
-              <img
-                src="img/61OXDDas0EL._SL1500_.jpg"
-                class="card-img-top"
-                alt="..."
-              />
-              <div class="card-body">
-                <h6 class="card-title">
-                  <a href="">Descripción del producto</a>
-                </h6>
-                <p class="">Precio</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-md-2">
-            <div class="card">
-              <img
-                src="img/Tratamiento Fortificante Protección Calor Redken Extreme Playsafe 200m.jpg"
-                class="card-img-top"
-                alt="..."
-              />
-              <div class="card-body">
-                <h6 class="card-title">
-                  <a href="">Descripción del producto</a>
-                </h6>
-                <p class="">Precio</p>
-              </div>
-            </div>
-          </div>
-        </div>
-            </div>
-            <div class="carousel-item">
-              <div class="row">
-          <div class="col-12 col-md-2">
-            <div class="card">
-              <img
-                src="img/61OXDDas0EL._SL1500_.jpg"
-                class="card-img-top"
-                alt="..."
-              />
-              <div class="card-body">
-                <h6 class="card-title">
-                  <a href="">Descripción del producto</a>
-                </h6>
-                <p class="">Precio</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-md-2">
-            <div class="card">
-              <img
-                src="img/Tratamiento Fortificante Protección Calor Redken Extreme Playsafe 200m.jpg"
-                class="card-img-top"
-                alt="..."
-              />
-              <div class="card-body">
-                <h6 class="card-title">
-                  <a href="">Descripción del producto</a>
-                </h6>
-                <p class="">Precio</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-md-2">
-            <div class="card">
-              <img
-                src="img/61OXDDas0EL._SL1500_.jpg"
-                class="card-img-top"
-                alt="..."
-              />
-              <div class="card-body">
-                <h6 class="card-title">
-                  <a href="">Descripción del producto</a>
-                </h6>
-                <p class="">Precio</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-md-2">
-            <div class="card">
-              <img
-                src="img/Tratamiento Fortificante Protección Calor Redken Extreme Playsafe 200m.jpg"
-                class="card-img-top"
-                alt="..."
-              />
-              <div class="card-body">
-                <h6 class="card-title">
-                  <a href="">Descripción del producto</a>
-                </h6>
-                <p class="">Precio</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-md-2">
-            <div class="card">
-              <img
-                src="img/61OXDDas0EL._SL1500_.jpg"
-                class="card-img-top"
-                alt="..."
-              />
-              <div class="card-body">
-                <h6 class="card-title">
-                  <a href="">Descripción del producto</a>
-                </h6>
-                <p class="">Precio</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-md-2">
-            <div class="card">
-              <img
-                src="img/Tratamiento Fortificante Protección Calor Redken Extreme Playsafe 200m.jpg"
-                class="card-img-top"
-                alt="..."
-              />
-              <div class="card-body">
-                <h6 class="card-title">
-                  <a href="">Descripción del producto</a>
-                </h6>
-                <p class="">Precio</p>
-              </div>
-            </div>
-          </div>
-        </div>
-            </div>
-          </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
-        </div>
-        
-      </div>
-
-      <div class="product-container mt-3 mb-3">
-        <h3 class="mb-2">
-          Productos <small><a href="">Ver mas</a></small>
-        </h3>
-        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
-          <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
           </div>
           <div class="carousel-inner">
             <div class="carousel-item active">
               <div class="row">
                 <div class="col-12 col-md-2">
                   <div class="card">
-                    <img src="img/cafetera.png" class="card-img-top" alt="..." />
+                    <img
+                      src="img/61OXDDas0EL._SL1500_.jpg"
+                      class="card-img-top"
+                      alt="..."
+                    />
                     <div class="card-body">
                       <h6 class="card-title">
                         <a href="">Descripción del producto</a>
@@ -473,7 +252,11 @@
                 </div>
                 <div class="col-12 col-md-2">
                   <div class="card">
-                    <img src="img/licuadora.webp" class="card-img-top" alt="..." />
+                    <img
+                      src="img/Tratamiento Fortificante Protección Calor Redken Extreme Playsafe 200m.jpg"
+                      class="card-img-top"
+                      alt="..."
+                    />
                     <div class="card-body">
                       <h6 class="card-title">
                         <a href="">Descripción del producto</a>
@@ -484,7 +267,11 @@
                 </div>
                 <div class="col-12 col-md-2">
                   <div class="card">
-                    <img src="img/cafetera.png" class="card-img-top" alt="..." />
+                    <img
+                      src="img/61OXDDas0EL._SL1500_.jpg"
+                      class="card-img-top"
+                      alt="..."
+                    />
                     <div class="card-body">
                       <h6 class="card-title">
                         <a href="">Descripción del producto</a>
@@ -495,7 +282,11 @@
                 </div>
                 <div class="col-12 col-md-2">
                   <div class="card">
-                    <img src="img/licuadora.webp" class="card-img-top" alt="..." />
+                    <img
+                      src="img/Tratamiento Fortificante Protección Calor Redken Extreme Playsafe 200m.jpg"
+                      class="card-img-top"
+                      alt="..."
+                    />
                     <div class="card-body">
                       <h6 class="card-title">
                         <a href="">Descripción del producto</a>
@@ -506,7 +297,11 @@
                 </div>
                 <div class="col-12 col-md-2">
                   <div class="card">
-                    <img src="img/cafetera.png" class="card-img-top" alt="..." />
+                    <img
+                      src="img/61OXDDas0EL._SL1500_.jpg"
+                      class="card-img-top"
+                      alt="..."
+                    />
                     <div class="card-body">
                       <h6 class="card-title">
                         <a href="">Descripción del producto</a>
@@ -517,77 +312,11 @@
                 </div>
                 <div class="col-12 col-md-2">
                   <div class="card">
-                    <img src="img/licuadora.webp" class="card-img-top" alt="..." />
-                    <div class="card-body">
-                      <h6 class="card-title">
-                        <a href="">Descripción del producto</a>
-                      </h6>
-                      <p class="">Precio</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <div class="row">
-                <div class="col-12 col-md-2">
-                  <div class="card">
-                    <img src="img/cafetera.png" class="card-img-top" alt="..." />
-                    <div class="card-body">
-                      <h6 class="card-title">
-                        <a href="">Descripción del producto</a>
-                      </h6>
-                      <p class="">Precio</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-12 col-md-2">
-                  <div class="card">
-                    <img src="img/licuadora.webp" class="card-img-top" alt="..." />
-                    <div class="card-body">
-                      <h6 class="card-title">
-                        <a href="">Descripción del producto</a>
-                      </h6>
-                      <p class="">Precio</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-12 col-md-2">
-                  <div class="card">
-                    <img src="img/cafetera.png" class="card-img-top" alt="..." />
-                    <div class="card-body">
-                      <h6 class="card-title">
-                        <a href="">Descripción del producto</a>
-                      </h6>
-                      <p class="">Precio</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-12 col-md-2">
-                  <div class="card">
-                    <img src="img/licuadora.webp" class="card-img-top" alt="..." />
-                    <div class="card-body">
-                      <h6 class="card-title">
-                        <a href="">Descripción del producto</a>
-                      </h6>
-                      <p class="">Precio</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-12 col-md-2">
-                  <div class="card">
-                    <img src="img/cafetera.png" class="card-img-top" alt="..." />
-                    <div class="card-body">
-                      <h6 class="card-title">
-                        <a href="">Descripción del producto</a>
-                      </h6>
-                      <p class="">Precio</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-12 col-md-2">
-                  <div class="card">
-                    <img src="img/licuadora.webp" class="card-img-top" alt="..." />
+                    <img
+                      src="img/Tratamiento Fortificante Protección Calor Redken Extreme Playsafe 200m.jpg"
+                      class="card-img-top"
+                      alt="..."
+                    />
                     <div class="card-body">
                       <h6 class="card-title">
                         <a href="">Descripción del producto</a>
@@ -602,7 +331,11 @@
               <div class="row">
                 <div class="col-12 col-md-2">
                   <div class="card">
-                    <img src="img/cafetera.png" class="card-img-top" alt="..." />
+                    <img
+                      src="img/61OXDDas0EL._SL1500_.jpg"
+                      class="card-img-top"
+                      alt="..."
+                    />
                     <div class="card-body">
                       <h6 class="card-title">
                         <a href="">Descripción del producto</a>
@@ -613,7 +346,11 @@
                 </div>
                 <div class="col-12 col-md-2">
                   <div class="card">
-                    <img src="img/licuadora.webp" class="card-img-top" alt="..." />
+                    <img
+                      src="img/Tratamiento Fortificante Protección Calor Redken Extreme Playsafe 200m.jpg"
+                      class="card-img-top"
+                      alt="..."
+                    />
                     <div class="card-body">
                       <h6 class="card-title">
                         <a href="">Descripción del producto</a>
@@ -624,7 +361,11 @@
                 </div>
                 <div class="col-12 col-md-2">
                   <div class="card">
-                    <img src="img/cafetera.png" class="card-img-top" alt="..." />
+                    <img
+                      src="img/61OXDDas0EL._SL1500_.jpg"
+                      class="card-img-top"
+                      alt="..."
+                    />
                     <div class="card-body">
                       <h6 class="card-title">
                         <a href="">Descripción del producto</a>
@@ -635,7 +376,11 @@
                 </div>
                 <div class="col-12 col-md-2">
                   <div class="card">
-                    <img src="img/licuadora.webp" class="card-img-top" alt="..." />
+                    <img
+                      src="img/Tratamiento Fortificante Protección Calor Redken Extreme Playsafe 200m.jpg"
+                      class="card-img-top"
+                      alt="..."
+                    />
                     <div class="card-body">
                       <h6 class="card-title">
                         <a href="">Descripción del producto</a>
@@ -646,7 +391,11 @@
                 </div>
                 <div class="col-12 col-md-2">
                   <div class="card">
-                    <img src="img/cafetera.png" class="card-img-top" alt="..." />
+                    <img
+                      src="img/61OXDDas0EL._SL1500_.jpg"
+                      class="card-img-top"
+                      alt="..."
+                    />
                     <div class="card-body">
                       <h6 class="card-title">
                         <a href="">Descripción del producto</a>
@@ -657,7 +406,105 @@
                 </div>
                 <div class="col-12 col-md-2">
                   <div class="card">
-                    <img src="img/licuadora.webp" class="card-img-top" alt="..." />
+                    <img
+                      src="img/Tratamiento Fortificante Protección Calor Redken Extreme Playsafe 200m.jpg"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <h6 class="card-title">
+                        <a href="">Descripción del producto</a>
+                      </h6>
+                      <p class="">Precio</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row">
+                <div class="col-12 col-md-2">
+                  <div class="card">
+                    <img
+                      src="img/61OXDDas0EL._SL1500_.jpg"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <h6 class="card-title">
+                        <a href="">Descripción del producto</a>
+                      </h6>
+                      <p class="">Precio</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-2">
+                  <div class="card">
+                    <img
+                      src="img/Tratamiento Fortificante Protección Calor Redken Extreme Playsafe 200m.jpg"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <h6 class="card-title">
+                        <a href="">Descripción del producto</a>
+                      </h6>
+                      <p class="">Precio</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-2">
+                  <div class="card">
+                    <img
+                      src="img/61OXDDas0EL._SL1500_.jpg"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <h6 class="card-title">
+                        <a href="">Descripción del producto</a>
+                      </h6>
+                      <p class="">Precio</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-2">
+                  <div class="card">
+                    <img
+                      src="img/Tratamiento Fortificante Protección Calor Redken Extreme Playsafe 200m.jpg"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <h6 class="card-title">
+                        <a href="">Descripción del producto</a>
+                      </h6>
+                      <p class="">Precio</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-2">
+                  <div class="card">
+                    <img
+                      src="img/61OXDDas0EL._SL1500_.jpg"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <h6 class="card-title">
+                        <a href="">Descripción del producto</a>
+                      </h6>
+                      <p class="">Precio</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-2">
+                  <div class="card">
+                    <img
+                      src="img/Tratamiento Fortificante Protección Calor Redken Extreme Playsafe 200m.jpg"
+                      class="card-img-top"
+                      alt="..."
+                    />
                     <div class="card-body">
                       <h6 class="card-title">
                         <a href="">Descripción del producto</a>
@@ -669,17 +516,361 @@
               </div>
             </div>
           </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev"
+          >
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Previous</span>
           </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next"
+          >
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Next</span>
           </button>
         </div>
+      </div>
 
-        
+      <div class="product-container mt-3 mb-3">
+        <h3 class="mb-2">
+          Productos <small><a href="">Ver mas</a></small>
+        </h3>
+        <div
+          id="carouselExampleIndicators"
+          class="carousel slide"
+          data-bs-ride="true"
+        >
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="row">
+                <div class="col-12 col-md-2">
+                  <div class="card">
+                    <img
+                      src="img/cafetera.png"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <h6 class="card-title">
+                        <a href="">Descripción del producto</a>
+                      </h6>
+                      <p class="">Precio</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-2">
+                  <div class="card">
+                    <img
+                      src="img/licuadora.webp"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <h6 class="card-title">
+                        <a href="">Descripción del producto</a>
+                      </h6>
+                      <p class="">Precio</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-2">
+                  <div class="card">
+                    <img
+                      src="img/cafetera.png"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <h6 class="card-title">
+                        <a href="">Descripción del producto</a>
+                      </h6>
+                      <p class="">Precio</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-2">
+                  <div class="card">
+                    <img
+                      src="img/licuadora.webp"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <h6 class="card-title">
+                        <a href="">Descripción del producto</a>
+                      </h6>
+                      <p class="">Precio</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-2">
+                  <div class="card">
+                    <img
+                      src="img/cafetera.png"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <h6 class="card-title">
+                        <a href="">Descripción del producto</a>
+                      </h6>
+                      <p class="">Precio</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-2">
+                  <div class="card">
+                    <img
+                      src="img/licuadora.webp"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <h6 class="card-title">
+                        <a href="">Descripción del producto</a>
+                      </h6>
+                      <p class="">Precio</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row">
+                <div class="col-12 col-md-2">
+                  <div class="card">
+                    <img
+                      src="img/cafetera.png"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <h6 class="card-title">
+                        <a href="">Descripción del producto</a>
+                      </h6>
+                      <p class="">Precio</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-2">
+                  <div class="card">
+                    <img
+                      src="img/licuadora.webp"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <h6 class="card-title">
+                        <a href="">Descripción del producto</a>
+                      </h6>
+                      <p class="">Precio</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-2">
+                  <div class="card">
+                    <img
+                      src="img/cafetera.png"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <h6 class="card-title">
+                        <a href="">Descripción del producto</a>
+                      </h6>
+                      <p class="">Precio</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-2">
+                  <div class="card">
+                    <img
+                      src="img/licuadora.webp"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <h6 class="card-title">
+                        <a href="">Descripción del producto</a>
+                      </h6>
+                      <p class="">Precio</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-2">
+                  <div class="card">
+                    <img
+                      src="img/cafetera.png"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <h6 class="card-title">
+                        <a href="">Descripción del producto</a>
+                      </h6>
+                      <p class="">Precio</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-2">
+                  <div class="card">
+                    <img
+                      src="img/licuadora.webp"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <h6 class="card-title">
+                        <a href="">Descripción del producto</a>
+                      </h6>
+                      <p class="">Precio</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row">
+                <div class="col-12 col-md-2">
+                  <div class="card">
+                    <img
+                      src="img/cafetera.png"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <h6 class="card-title">
+                        <a href="">Descripción del producto</a>
+                      </h6>
+                      <p class="">Precio</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-2">
+                  <div class="card">
+                    <img
+                      src="img/licuadora.webp"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <h6 class="card-title">
+                        <a href="">Descripción del producto</a>
+                      </h6>
+                      <p class="">Precio</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-2">
+                  <div class="card">
+                    <img
+                      src="img/cafetera.png"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <h6 class="card-title">
+                        <a href="">Descripción del producto</a>
+                      </h6>
+                      <p class="">Precio</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-2">
+                  <div class="card">
+                    <img
+                      src="img/licuadora.webp"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <h6 class="card-title">
+                        <a href="">Descripción del producto</a>
+                      </h6>
+                      <p class="">Precio</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-2">
+                  <div class="card">
+                    <img
+                      src="img/cafetera.png"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <h6 class="card-title">
+                        <a href="">Descripción del producto</a>
+                      </h6>
+                      <p class="">Precio</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-2">
+                  <div class="card">
+                    <img
+                      src="img/licuadora.webp"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <h6 class="card-title">
+                        <a href="">Descripción del producto</a>
+                      </h6>
+                      <p class="">Precio</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
       </div>
 
       <!-- Jumbotron -->
@@ -834,301 +1025,296 @@
         <h3 class="mb-2">
           Productos <small><a href="">Ver mas</a></small>
         </h3>
-        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+        <div
+          id="carouselExampleIndicators"
+          class="carousel slide"
+          data-bs-ride="true"
+        >
           <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
           </div>
           <div class="carousel-inner">
             <div class="carousel-item active">
-                <div class="row">
-          <div class="col-12 col-md-2">
-            <div class="card">
-              <img
-                src="img/candado.jpg"
-                class="card-img-top"
-                alt="..."
-              />
-              <div class="card-body">
-                <h6 class="card-title">
-                  <a href="">Descripción del producto</a>
-                </h6>
-                <p class="">Precio</p>
+              <div class="row">
+                <div class="col-12 col-md-2">
+                  <div class="card">
+                    <img src="img/candado.jpg" class="card-img-top" alt="..." />
+                    <div class="card-body">
+                      <h6 class="card-title">
+                        <a href="">Descripción del producto</a>
+                      </h6>
+                      <p class="">Precio</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-2">
+                  <div class="card">
+                    <img
+                      src="img/destonillador.jpg"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <h6 class="card-title">
+                        <a href="">Descripción del producto</a>
+                      </h6>
+                      <p class="">Precio</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-2">
+                  <div class="card">
+                    <img src="img/candado.jpg" class="card-img-top" alt="..." />
+                    <div class="card-body">
+                      <h6 class="card-title">
+                        <a href="">Descripción del producto</a>
+                      </h6>
+                      <p class="">Precio</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-2">
+                  <div class="card">
+                    <img
+                      src="img/destonillador.jpg"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <h6 class="card-title">
+                        <a href="">Descripción del producto</a>
+                      </h6>
+                      <p class="">Precio</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-2">
+                  <div class="card">
+                    <img src="img/candado.jpg" class="card-img-top" alt="..." />
+                    <div class="card-body">
+                      <h6 class="card-title">
+                        <a href="">Descripción del producto</a>
+                      </h6>
+                      <p class="">Precio</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-2">
+                  <div class="card">
+                    <img
+                      src="img/destonillador.jpg"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <h6 class="card-title">
+                        <a href="">Descripción del producto</a>
+                      </h6>
+                      <p class="">Precio</p>
+                    </div>
+                  </div>
+                </div>
               </div>
-            </div>
-          </div>
-          <div class="col-12 col-md-2">
-            <div class="card">
-              <img
-                src="img/destonillador.jpg"
-                class="card-img-top"
-                alt="..."
-              />
-              <div class="card-body">
-                <h6 class="card-title">
-                  <a href="">Descripción del producto</a>
-                </h6>
-                <p class="">Precio</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-md-2">
-            <div class="card">
-              <img
-                src="img/candado.jpg"
-                class="card-img-top"
-                alt="..."
-              />
-              <div class="card-body">
-                <h6 class="card-title">
-                  <a href="">Descripción del producto</a>
-                </h6>
-                <p class="">Precio</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-md-2">
-            <div class="card">
-              <img
-                src="img/destonillador.jpg"
-                class="card-img-top"
-                alt="..."
-              />
-              <div class="card-body">
-                <h6 class="card-title">
-                  <a href="">Descripción del producto</a>
-                </h6>
-                <p class="">Precio</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-md-2">
-            <div class="card">
-              <img
-                src="img/candado.jpg"
-                class="card-img-top"
-                alt="..."
-              />
-              <div class="card-body">
-                <h6 class="card-title">
-                  <a href="">Descripción del producto</a>
-                </h6>
-                <p class="">Precio</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-md-2">
-            <div class="card">
-              <img
-                src="img/destonillador.jpg"
-                class="card-img-top"
-                alt="..."
-              />
-              <div class="card-body">
-                <h6 class="card-title">
-                  <a href="">Descripción del producto</a>
-                </h6>
-                <p class="">Precio</p>
-              </div>
-            </div>
-          </div>
-        </div>
             </div>
             <div class="carousel-item">
-                <div class="row">
-          <div class="col-12 col-md-2">
-            <div class="card">
-              <img
-                src="img/candado.jpg"
-                class="card-img-top"
-                alt="..."
-              />
-              <div class="card-body">
-                <h6 class="card-title">
-                  <a href="">Descripción del producto</a>
-                </h6>
-                <p class="">Precio</p>
+              <div class="row">
+                <div class="col-12 col-md-2">
+                  <div class="card">
+                    <img src="img/candado.jpg" class="card-img-top" alt="..." />
+                    <div class="card-body">
+                      <h6 class="card-title">
+                        <a href="">Descripción del producto</a>
+                      </h6>
+                      <p class="">Precio</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-2">
+                  <div class="card">
+                    <img
+                      src="img/destonillador.jpg"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <h6 class="card-title">
+                        <a href="">Descripción del producto</a>
+                      </h6>
+                      <p class="">Precio</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-2">
+                  <div class="card">
+                    <img src="img/candado.jpg" class="card-img-top" alt="..." />
+                    <div class="card-body">
+                      <h6 class="card-title">
+                        <a href="">Descripción del producto</a>
+                      </h6>
+                      <p class="">Precio</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-2">
+                  <div class="card">
+                    <img
+                      src="img/destonillador.jpg"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <h6 class="card-title">
+                        <a href="">Descripción del producto</a>
+                      </h6>
+                      <p class="">Precio</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-2">
+                  <div class="card">
+                    <img src="img/candado.jpg" class="card-img-top" alt="..." />
+                    <div class="card-body">
+                      <h6 class="card-title">
+                        <a href="">Descripción del producto</a>
+                      </h6>
+                      <p class="">Precio</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-2">
+                  <div class="card">
+                    <img
+                      src="img/destonillador.jpg"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <h6 class="card-title">
+                        <a href="">Descripción del producto</a>
+                      </h6>
+                      <p class="">Precio</p>
+                    </div>
+                  </div>
+                </div>
               </div>
-            </div>
-          </div>
-          <div class="col-12 col-md-2">
-            <div class="card">
-              <img
-                src="img/destonillador.jpg"
-                class="card-img-top"
-                alt="..."
-              />
-              <div class="card-body">
-                <h6 class="card-title">
-                  <a href="">Descripción del producto</a>
-                </h6>
-                <p class="">Precio</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-md-2">
-            <div class="card">
-              <img
-                src="img/candado.jpg"
-                class="card-img-top"
-                alt="..."
-              />
-              <div class="card-body">
-                <h6 class="card-title">
-                  <a href="">Descripción del producto</a>
-                </h6>
-                <p class="">Precio</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-md-2">
-            <div class="card">
-              <img
-                src="img/destonillador.jpg"
-                class="card-img-top"
-                alt="..."
-              />
-              <div class="card-body">
-                <h6 class="card-title">
-                  <a href="">Descripción del producto</a>
-                </h6>
-                <p class="">Precio</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-md-2">
-            <div class="card">
-              <img
-                src="img/candado.jpg"
-                class="card-img-top"
-                alt="..."
-              />
-              <div class="card-body">
-                <h6 class="card-title">
-                  <a href="">Descripción del producto</a>
-                </h6>
-                <p class="">Precio</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-md-2">
-            <div class="card">
-              <img
-                src="img/destonillador.jpg"
-                class="card-img-top"
-                alt="..."
-              />
-              <div class="card-body">
-                <h6 class="card-title">
-                  <a href="">Descripción del producto</a>
-                </h6>
-                <p class="">Precio</p>
-              </div>
-            </div>
-          </div>
-        </div>
             </div>
             <div class="carousel-item">
-                <div class="row">
-          <div class="col-12 col-md-2">
-            <div class="card">
-              <img
-                src="img/candado.jpg"
-                class="card-img-top"
-                alt="..."
-              />
-              <div class="card-body">
-                <h6 class="card-title">
-                  <a href="">Descripción del producto</a>
-                </h6>
-                <p class="">Precio</p>
+              <div class="row">
+                <div class="col-12 col-md-2">
+                  <div class="card">
+                    <img src="img/candado.jpg" class="card-img-top" alt="..." />
+                    <div class="card-body">
+                      <h6 class="card-title">
+                        <a href="">Descripción del producto</a>
+                      </h6>
+                      <p class="">Precio</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-2">
+                  <div class="card">
+                    <img
+                      src="img/destonillador.jpg"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <h6 class="card-title">
+                        <a href="">Descripción del producto</a>
+                      </h6>
+                      <p class="">Precio</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-2">
+                  <div class="card">
+                    <img src="img/candado.jpg" class="card-img-top" alt="..." />
+                    <div class="card-body">
+                      <h6 class="card-title">
+                        <a href="">Descripción del producto</a>
+                      </h6>
+                      <p class="">Precio</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-2">
+                  <div class="card">
+                    <img
+                      src="img/destonillador.jpg"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <h6 class="card-title">
+                        <a href="">Descripción del producto</a>
+                      </h6>
+                      <p class="">Precio</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-2">
+                  <div class="card">
+                    <img src="img/candado.jpg" class="card-img-top" alt="..." />
+                    <div class="card-body">
+                      <h6 class="card-title">
+                        <a href="">Descripción del producto</a>
+                      </h6>
+                      <p class="">Precio</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-2">
+                  <div class="card">
+                    <img
+                      src="img/destonillador.jpg"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <h6 class="card-title">
+                        <a href="">Descripción del producto</a>
+                      </h6>
+                      <p class="">Precio</p>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-          <div class="col-12 col-md-2">
-            <div class="card">
-              <img
-                src="img/destonillador.jpg"
-                class="card-img-top"
-                alt="..."
-              />
-              <div class="card-body">
-                <h6 class="card-title">
-                  <a href="">Descripción del producto</a>
-                </h6>
-                <p class="">Precio</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-md-2">
-            <div class="card">
-              <img
-                src="img/candado.jpg"
-                class="card-img-top"
-                alt="..."
-              />
-              <div class="card-body">
-                <h6 class="card-title">
-                  <a href="">Descripción del producto</a>
-                </h6>
-                <p class="">Precio</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-md-2">
-            <div class="card">
-              <img
-                src="img/destonillador.jpg"
-                class="card-img-top"
-                alt="..."
-              />
-              <div class="card-body">
-                <h6 class="card-title">
-                  <a href="">Descripción del producto</a>
-                </h6>
-                <p class="">Precio</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-md-2">
-            <div class="card">
-              <img
-                src="img/candado.jpg"
-                class="card-img-top"
-                alt="..."
-              />
-              <div class="card-body">
-                <h6 class="card-title">
-                  <a href="">Descripción del producto</a>
-                </h6>
-                <p class="">Precio</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-md-2">
-            <div class="card">
-              <img
-                src="img/destonillador.jpg"
-                class="card-img-top"
-                alt="..."
-              />
-              <div class="card-body">
-                <h6 class="card-title">
-                  <a href="">Descripción del producto</a>
-                </h6>
-                <p class="">Precio</p>
-              </div>
-            </div>
-          </div>
-        </div>
-            </div>
-          </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev"
+          >
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Previous</span>
           </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next"
+          >
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Next</span>
           </button>
@@ -1201,301 +1387,332 @@
         <h3 class="mb-2">
           Productos <small><a href="">Ver mas</a></small>
         </h3>
-        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+        <div
+          id="carouselExampleIndicators"
+          class="carousel slide"
+          data-bs-ride="true"
+        >
           <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
           </div>
           <div class="carousel-inner">
-       <div class="carousel-item active">
-       <div class="row">
-          <div class="col-12 col-md-2">
-            <div class="card">
-              <img
-                src="img/61OXDDas0EL._SL1500_.jpg"
-                class="card-img-top"
-                alt="..."
-              />
-              <div class="card-body">
-                <h6 class="card-title">
-                  <a href="">Descripción del producto</a>
-                </h6>
-                <p class="">Precio</p>
+            <div class="carousel-item active">
+              <div class="row">
+                <div class="col-12 col-md-2">
+                  <div class="card">
+                    <img
+                      src="img/61OXDDas0EL._SL1500_.jpg"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <h6 class="card-title">
+                        <a href="">Descripción del producto</a>
+                      </h6>
+                      <p class="">Precio</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-2">
+                  <div class="card">
+                    <img
+                      src="img/Tratamiento Fortificante Protección Calor Redken Extreme Playsafe 200m.jpg"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <h6 class="card-title">
+                        <a href="">Descripción del producto</a>
+                      </h6>
+                      <p class="">Precio</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-2">
+                  <div class="card">
+                    <img
+                      src="img/61OXDDas0EL._SL1500_.jpg"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <h6 class="card-title">
+                        <a href="">Descripción del producto</a>
+                      </h6>
+                      <p class="">Precio</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-2">
+                  <div class="card">
+                    <img
+                      src="img/Tratamiento Fortificante Protección Calor Redken Extreme Playsafe 200m.jpg"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <h6 class="card-title">
+                        <a href="">Descripción del producto</a>
+                      </h6>
+                      <p class="">Precio</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-2">
+                  <div class="card">
+                    <img
+                      src="img/61OXDDas0EL._SL1500_.jpg"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <h6 class="card-title">
+                        <a href="">Descripción del producto</a>
+                      </h6>
+                      <p class="">Precio</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-2">
+                  <div class="card">
+                    <img
+                      src="img/Tratamiento Fortificante Protección Calor Redken Extreme Playsafe 200m.jpg"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <h6 class="card-title">
+                        <a href="">Descripción del producto</a>
+                      </h6>
+                      <p class="">Precio</p>
+                    </div>
+                  </div>
+                </div>
               </div>
-            </div>
-          </div>
-          <div class="col-12 col-md-2">
-            <div class="card">
-              <img
-                src="img/Tratamiento Fortificante Protección Calor Redken Extreme Playsafe 200m.jpg"
-                class="card-img-top"
-                alt="..."
-              />
-              <div class="card-body">
-                <h6 class="card-title">
-                  <a href="">Descripción del producto</a>
-                </h6>
-                <p class="">Precio</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-md-2">
-            <div class="card">
-              <img
-                src="img/61OXDDas0EL._SL1500_.jpg"
-                class="card-img-top"
-                alt="..."
-              />
-              <div class="card-body">
-                <h6 class="card-title">
-                  <a href="">Descripción del producto</a>
-                </h6>
-                <p class="">Precio</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-md-2">
-            <div class="card">
-              <img
-                src="img/Tratamiento Fortificante Protección Calor Redken Extreme Playsafe 200m.jpg"
-                class="card-img-top"
-                alt="..."
-              />
-              <div class="card-body">
-                <h6 class="card-title">
-                  <a href="">Descripción del producto</a>
-                </h6>
-                <p class="">Precio</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-md-2">
-            <div class="card">
-              <img
-                src="img/61OXDDas0EL._SL1500_.jpg"
-                class="card-img-top"
-                alt="..."
-              />
-              <div class="card-body">
-                <h6 class="card-title">
-                  <a href="">Descripción del producto</a>
-                </h6>
-                <p class="">Precio</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-md-2">
-            <div class="card">
-              <img
-                src="img/Tratamiento Fortificante Protección Calor Redken Extreme Playsafe 200m.jpg"
-                class="card-img-top"
-                alt="..."
-              />
-              <div class="card-body">
-                <h6 class="card-title">
-                  <a href="">Descripción del producto</a>
-                </h6>
-                <p class="">Precio</p>
-              </div>
-            </div>
-          </div>
-        </div>
             </div>
             <div class="carousel-item">
               <div class="row">
-          <div class="col-12 col-md-2">
-            <div class="card">
-              <img
-                src="img/61OXDDas0EL._SL1500_.jpg"
-                class="card-img-top"
-                alt="..."
-              />
-              <div class="card-body">
-                <h6 class="card-title">
-                  <a href="">Descripción del producto</a>
-                </h6>
-                <p class="">Precio</p>
+                <div class="col-12 col-md-2">
+                  <div class="card">
+                    <img
+                      src="img/61OXDDas0EL._SL1500_.jpg"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <h6 class="card-title">
+                        <a href="">Descripción del producto</a>
+                      </h6>
+                      <p class="">Precio</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-2">
+                  <div class="card">
+                    <img
+                      src="img/Tratamiento Fortificante Protección Calor Redken Extreme Playsafe 200m.jpg"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <h6 class="card-title">
+                        <a href="">Descripción del producto</a>
+                      </h6>
+                      <p class="">Precio</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-2">
+                  <div class="card">
+                    <img
+                      src="img/61OXDDas0EL._SL1500_.jpg"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <h6 class="card-title">
+                        <a href="">Descripción del producto</a>
+                      </h6>
+                      <p class="">Precio</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-2">
+                  <div class="card">
+                    <img
+                      src="img/Tratamiento Fortificante Protección Calor Redken Extreme Playsafe 200m.jpg"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <h6 class="card-title">
+                        <a href="">Descripción del producto</a>
+                      </h6>
+                      <p class="">Precio</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-2">
+                  <div class="card">
+                    <img
+                      src="img/61OXDDas0EL._SL1500_.jpg"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <h6 class="card-title">
+                        <a href="">Descripción del producto</a>
+                      </h6>
+                      <p class="">Precio</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-2">
+                  <div class="card">
+                    <img
+                      src="img/Tratamiento Fortificante Protección Calor Redken Extreme Playsafe 200m.jpg"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <h6 class="card-title">
+                        <a href="">Descripción del producto</a>
+                      </h6>
+                      <p class="">Precio</p>
+                    </div>
+                  </div>
+                </div>
               </div>
-            </div>
-          </div>
-          <div class="col-12 col-md-2">
-            <div class="card">
-              <img
-                src="img/Tratamiento Fortificante Protección Calor Redken Extreme Playsafe 200m.jpg"
-                class="card-img-top"
-                alt="..."
-              />
-              <div class="card-body">
-                <h6 class="card-title">
-                  <a href="">Descripción del producto</a>
-                </h6>
-                <p class="">Precio</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-md-2">
-            <div class="card">
-              <img
-                src="img/61OXDDas0EL._SL1500_.jpg"
-                class="card-img-top"
-                alt="..."
-              />
-              <div class="card-body">
-                <h6 class="card-title">
-                  <a href="">Descripción del producto</a>
-                </h6>
-                <p class="">Precio</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-md-2">
-            <div class="card">
-              <img
-                src="img/Tratamiento Fortificante Protección Calor Redken Extreme Playsafe 200m.jpg"
-                class="card-img-top"
-                alt="..."
-              />
-              <div class="card-body">
-                <h6 class="card-title">
-                  <a href="">Descripción del producto</a>
-                </h6>
-                <p class="">Precio</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-md-2">
-            <div class="card">
-              <img
-                src="img/61OXDDas0EL._SL1500_.jpg"
-                class="card-img-top"
-                alt="..."
-              />
-              <div class="card-body">
-                <h6 class="card-title">
-                  <a href="">Descripción del producto</a>
-                </h6>
-                <p class="">Precio</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-md-2">
-            <div class="card">
-              <img
-                src="img/Tratamiento Fortificante Protección Calor Redken Extreme Playsafe 200m.jpg"
-                class="card-img-top"
-                alt="..."
-              />
-              <div class="card-body">
-                <h6 class="card-title">
-                  <a href="">Descripción del producto</a>
-                </h6>
-                <p class="">Precio</p>
-              </div>
-            </div>
-          </div>
-        </div>
             </div>
             <div class="carousel-item">
               <div class="row">
-          <div class="col-12 col-md-2">
-            <div class="card">
-              <img
-                src="img/61OXDDas0EL._SL1500_.jpg"
-                class="card-img-top"
-                alt="..."
-              />
-              <div class="card-body">
-                <h6 class="card-title">
-                  <a href="">Descripción del producto</a>
-                </h6>
-                <p class="">Precio</p>
+                <div class="col-12 col-md-2">
+                  <div class="card">
+                    <img
+                      src="img/61OXDDas0EL._SL1500_.jpg"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <h6 class="card-title">
+                        <a href="">Descripción del producto</a>
+                      </h6>
+                      <p class="">Precio</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-2">
+                  <div class="card">
+                    <img
+                      src="img/Tratamiento Fortificante Protección Calor Redken Extreme Playsafe 200m.jpg"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <h6 class="card-title">
+                        <a href="">Descripción del producto</a>
+                      </h6>
+                      <p class="">Precio</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-2">
+                  <div class="card">
+                    <img
+                      src="img/61OXDDas0EL._SL1500_.jpg"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <h6 class="card-title">
+                        <a href="">Descripción del producto</a>
+                      </h6>
+                      <p class="">Precio</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-2">
+                  <div class="card">
+                    <img
+                      src="img/Tratamiento Fortificante Protección Calor Redken Extreme Playsafe 200m.jpg"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <h6 class="card-title">
+                        <a href="">Descripción del producto</a>
+                      </h6>
+                      <p class="">Precio</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-2">
+                  <div class="card">
+                    <img
+                      src="img/61OXDDas0EL._SL1500_.jpg"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <h6 class="card-title">
+                        <a href="">Descripción del producto</a>
+                      </h6>
+                      <p class="">Precio</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-2">
+                  <div class="card">
+                    <img
+                      src="img/Tratamiento Fortificante Protección Calor Redken Extreme Playsafe 200m.jpg"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <h6 class="card-title">
+                        <a href="">Descripción del producto</a>
+                      </h6>
+                      <p class="">Precio</p>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-          <div class="col-12 col-md-2">
-            <div class="card">
-              <img
-                src="img/Tratamiento Fortificante Protección Calor Redken Extreme Playsafe 200m.jpg"
-                class="card-img-top"
-                alt="..."
-              />
-              <div class="card-body">
-                <h6 class="card-title">
-                  <a href="">Descripción del producto</a>
-                </h6>
-                <p class="">Precio</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-md-2">
-            <div class="card">
-              <img
-                src="img/61OXDDas0EL._SL1500_.jpg"
-                class="card-img-top"
-                alt="..."
-              />
-              <div class="card-body">
-                <h6 class="card-title">
-                  <a href="">Descripción del producto</a>
-                </h6>
-                <p class="">Precio</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-md-2">
-            <div class="card">
-              <img
-                src="img/Tratamiento Fortificante Protección Calor Redken Extreme Playsafe 200m.jpg"
-                class="card-img-top"
-                alt="..."
-              />
-              <div class="card-body">
-                <h6 class="card-title">
-                  <a href="">Descripción del producto</a>
-                </h6>
-                <p class="">Precio</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-md-2">
-            <div class="card">
-              <img
-                src="img/61OXDDas0EL._SL1500_.jpg"
-                class="card-img-top"
-                alt="..."
-              />
-              <div class="card-body">
-                <h6 class="card-title">
-                  <a href="">Descripción del producto</a>
-                </h6>
-                <p class="">Precio</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-md-2">
-            <div class="card">
-              <img
-                src="img/Tratamiento Fortificante Protección Calor Redken Extreme Playsafe 200m.jpg"
-                class="card-img-top"
-                alt="..."
-              />
-              <div class="card-body">
-                <h6 class="card-title">
-                  <a href="">Descripción del producto</a>
-                </h6>
-                <p class="">Precio</p>
-              </div>
-            </div>
-          </div>
-        </div>
-            </div>
-          </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev"
+          >
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Previous</span>
           </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next"
+          >
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Next</span>
           </button>
@@ -1507,20 +1724,28 @@
           <h1 class="display-5 fw-bold text-center text-white">
             Organiza tu hogar
           </h1>
-      </div>
+        </div>
       </div>
       <!-- container de productos -->
       <div class="product-container mt-3 mb-3">
         <h3 class="mb-2">
           Productos <small><a href="">Ver mas</a></small>
         </h3>
-        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div
+          id="carouselExampleControls"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
           <div class="carousel-inner">
             <div class="carousel-item active">
               <div class="row">
                 <div class="col-12 col-md-2">
                   <div class="card">
-                    <img src="img/cafetera.png" class="card-img-top" alt="..." />
+                    <img
+                      src="img/cafetera.png"
+                      class="card-img-top"
+                      alt="..."
+                    />
                     <div class="card-body">
                       <h6 class="card-title">
                         <a href="">Descripción del producto</a>
@@ -1531,7 +1756,11 @@
                 </div>
                 <div class="col-12 col-md-2">
                   <div class="card">
-                    <img src="img/licuadora.webp" class="card-img-top" alt="..." />
+                    <img
+                      src="img/licuadora.webp"
+                      class="card-img-top"
+                      alt="..."
+                    />
                     <div class="card-body">
                       <h6 class="card-title">
                         <a href="">Descripción del producto</a>
@@ -1542,7 +1771,11 @@
                 </div>
                 <div class="col-12 col-md-2">
                   <div class="card">
-                    <img src="img/cafetera.png" class="card-img-top" alt="..." />
+                    <img
+                      src="img/cafetera.png"
+                      class="card-img-top"
+                      alt="..."
+                    />
                     <div class="card-body">
                       <h6 class="card-title">
                         <a href="">Descripción del producto</a>
@@ -1553,7 +1786,11 @@
                 </div>
                 <div class="col-12 col-md-2">
                   <div class="card">
-                    <img src="img/licuadora.webp" class="card-img-top" alt="..." />
+                    <img
+                      src="img/licuadora.webp"
+                      class="card-img-top"
+                      alt="..."
+                    />
                     <div class="card-body">
                       <h6 class="card-title">
                         <a href="">Descripción del producto</a>
@@ -1564,7 +1801,11 @@
                 </div>
                 <div class="col-12 col-md-2">
                   <div class="card">
-                    <img src="img/cafetera.png" class="card-img-top" alt="..." />
+                    <img
+                      src="img/cafetera.png"
+                      class="card-img-top"
+                      alt="..."
+                    />
                     <div class="card-body">
                       <h6 class="card-title">
                         <a href="">Descripción del producto</a>
@@ -1575,7 +1816,11 @@
                 </div>
                 <div class="col-12 col-md-2">
                   <div class="card">
-                    <img src="img/licuadora.webp" class="card-img-top" alt="..." />
+                    <img
+                      src="img/licuadora.webp"
+                      class="card-img-top"
+                      alt="..."
+                    />
                     <div class="card-body">
                       <h6 class="card-title">
                         <a href="">Descripción del producto</a>
@@ -1587,151 +1832,209 @@
               </div>
             </div>
             <div class="carousel-item">
-               <div class="row">
-          <div class="col-12 col-md-2">
-            <div class="card">
-              <img src="img/cafetera.png" class="card-img-top" alt="..." />
-              <div class="card-body">
-                <h6 class="card-title">
-                  <a href="">Descripción del producto</a>
-                </h6>
-                <p class="">Precio</p>
+              <div class="row">
+                <div class="col-12 col-md-2">
+                  <div class="card">
+                    <img
+                      src="img/cafetera.png"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <h6 class="card-title">
+                        <a href="">Descripción del producto</a>
+                      </h6>
+                      <p class="">Precio</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-2">
+                  <div class="card">
+                    <img
+                      src="img/licuadora.webp"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <h6 class="card-title">
+                        <a href="">Descripción del producto</a>
+                      </h6>
+                      <p class="">Precio</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-2">
+                  <div class="card">
+                    <img
+                      src="img/cafetera.png"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <h6 class="card-title">
+                        <a href="">Descripción del producto</a>
+                      </h6>
+                      <p class="">Precio</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-2">
+                  <div class="card">
+                    <img
+                      src="img/licuadora.webp"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <h6 class="card-title">
+                        <a href="">Descripción del producto</a>
+                      </h6>
+                      <p class="">Precio</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-2">
+                  <div class="card">
+                    <img
+                      src="img/cafetera.png"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <h6 class="card-title">
+                        <a href="">Descripción del producto</a>
+                      </h6>
+                      <p class="">Precio</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-2">
+                  <div class="card">
+                    <img
+                      src="img/licuadora.webp"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <h6 class="card-title">
+                        <a href="">Descripción del producto</a>
+                      </h6>
+                      <p class="">Precio</p>
+                    </div>
+                  </div>
+                </div>
               </div>
-            </div>
-          </div>
-          <div class="col-12 col-md-2">
-            <div class="card">
-              <img src="img/licuadora.webp" class="card-img-top" alt="..." />
-              <div class="card-body">
-                <h6 class="card-title">
-                  <a href="">Descripción del producto</a>
-                </h6>
-                <p class="">Precio</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-md-2">
-            <div class="card">
-              <img src="img/cafetera.png" class="card-img-top" alt="..." />
-              <div class="card-body">
-                <h6 class="card-title">
-                  <a href="">Descripción del producto</a>
-                </h6>
-                <p class="">Precio</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-md-2">
-            <div class="card">
-              <img src="img/licuadora.webp" class="card-img-top" alt="..." />
-              <div class="card-body">
-                <h6 class="card-title">
-                  <a href="">Descripción del producto</a>
-                </h6>
-                <p class="">Precio</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-md-2">
-            <div class="card">
-              <img src="img/cafetera.png" class="card-img-top" alt="..." />
-              <div class="card-body">
-                <h6 class="card-title">
-                  <a href="">Descripción del producto</a>
-                </h6>
-                <p class="">Precio</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-md-2">
-            <div class="card">
-              <img src="img/licuadora.webp" class="card-img-top" alt="..." />
-              <div class="card-body">
-                <h6 class="card-title">
-                  <a href="">Descripción del producto</a>
-                </h6>
-                <p class="">Precio</p>
-              </div>
-            </div>
-          </div>
-        </div>
             </div>
             <div class="carousel-item">
-               <div class="row">
-          <div class="col-12 col-md-2">
-            <div class="card">
-              <img src="img/cafetera.png" class="card-img-top" alt="..." />
-              <div class="card-body">
-                <h6 class="card-title">
-                  <a href="">Descripción del producto</a>
-                </h6>
-                <p class="">Precio</p>
+              <div class="row">
+                <div class="col-12 col-md-2">
+                  <div class="card">
+                    <img
+                      src="img/cafetera.png"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <h6 class="card-title">
+                        <a href="">Descripción del producto</a>
+                      </h6>
+                      <p class="">Precio</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-2">
+                  <div class="card">
+                    <img
+                      src="img/licuadora.webp"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <h6 class="card-title">
+                        <a href="">Descripción del producto</a>
+                      </h6>
+                      <p class="">Precio</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-2">
+                  <div class="card">
+                    <img
+                      src="img/cafetera.png"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <h6 class="card-title">
+                        <a href="">Descripción del producto</a>
+                      </h6>
+                      <p class="">Precio</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-2">
+                  <div class="card">
+                    <img
+                      src="img/licuadora.webp"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <h6 class="card-title">
+                        <a href="">Descripción del producto</a>
+                      </h6>
+                      <p class="">Precio</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-2">
+                  <div class="card">
+                    <img
+                      src="img/cafetera.png"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <h6 class="card-title">
+                        <a href="">Descripción del producto</a>
+                      </h6>
+                      <p class="">Precio</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-2">
+                  <div class="card">
+                    <img
+                      src="img/licuadora.webp"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <h6 class="card-title">
+                        <a href="">Descripción del producto</a>
+                      </h6>
+                      <p class="">Precio</p>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-          <div class="col-12 col-md-2">
-            <div class="card">
-              <img src="img/licuadora.webp" class="card-img-top" alt="..." />
-              <div class="card-body">
-                <h6 class="card-title">
-                  <a href="">Descripción del producto</a>
-                </h6>
-                <p class="">Precio</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-md-2">
-            <div class="card">
-              <img src="img/cafetera.png" class="card-img-top" alt="..." />
-              <div class="card-body">
-                <h6 class="card-title">
-                  <a href="">Descripción del producto</a>
-                </h6>
-                <p class="">Precio</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-md-2">
-            <div class="card">
-              <img src="img/licuadora.webp" class="card-img-top" alt="..." />
-              <div class="card-body">
-                <h6 class="card-title">
-                  <a href="">Descripción del producto</a>
-                </h6>
-                <p class="">Precio</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-md-2">
-            <div class="card">
-              <img src="img/cafetera.png" class="card-img-top" alt="..." />
-              <div class="card-body">
-                <h6 class="card-title">
-                  <a href="">Descripción del producto</a>
-                </h6>
-                <p class="">Precio</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-md-2">
-            <div class="card">
-              <img src="img/licuadora.webp" class="card-img-top" alt="..." />
-              <div class="card-body">
-                <h6 class="card-title">
-                  <a href="">Descripción del producto</a>
-                </h6>
-                <p class="">Precio</p>
-              </div>
-            </div>
-          </div>
-        </div>
-            </div>
-          </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleControls"
+            data-bs-slide="prev"
+          >
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Previous</span>
           </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleControls"
+            data-bs-slide="next"
+          >
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Next</span>
           </button>
@@ -1742,301 +2045,296 @@
         <h3 class="mb-2">
           Productos <small><a href="">Ver mas</a></small>
         </h3>
-        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+        <div
+          id="carouselExampleIndicators"
+          class="carousel slide"
+          data-bs-ride="true"
+        >
           <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
           </div>
           <div class="carousel-inner">
             <div class="carousel-item active">
-                <div class="row">
-          <div class="col-12 col-md-2">
-            <div class="card">
-              <img
-                src="img/candado.jpg"
-                class="card-img-top"
-                alt="..."
-              />
-              <div class="card-body">
-                <h6 class="card-title">
-                  <a href="">Descripción del producto</a>
-                </h6>
-                <p class="">Precio</p>
+              <div class="row">
+                <div class="col-12 col-md-2">
+                  <div class="card">
+                    <img src="img/candado.jpg" class="card-img-top" alt="..." />
+                    <div class="card-body">
+                      <h6 class="card-title">
+                        <a href="">Descripción del producto</a>
+                      </h6>
+                      <p class="">Precio</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-2">
+                  <div class="card">
+                    <img
+                      src="img/destonillador.jpg"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <h6 class="card-title">
+                        <a href="">Descripción del producto</a>
+                      </h6>
+                      <p class="">Precio</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-2">
+                  <div class="card">
+                    <img src="img/candado.jpg" class="card-img-top" alt="..." />
+                    <div class="card-body">
+                      <h6 class="card-title">
+                        <a href="">Descripción del producto</a>
+                      </h6>
+                      <p class="">Precio</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-2">
+                  <div class="card">
+                    <img
+                      src="img/destonillador.jpg"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <h6 class="card-title">
+                        <a href="">Descripción del producto</a>
+                      </h6>
+                      <p class="">Precio</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-2">
+                  <div class="card">
+                    <img src="img/candado.jpg" class="card-img-top" alt="..." />
+                    <div class="card-body">
+                      <h6 class="card-title">
+                        <a href="">Descripción del producto</a>
+                      </h6>
+                      <p class="">Precio</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-2">
+                  <div class="card">
+                    <img
+                      src="img/destonillador.jpg"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <h6 class="card-title">
+                        <a href="">Descripción del producto</a>
+                      </h6>
+                      <p class="">Precio</p>
+                    </div>
+                  </div>
+                </div>
               </div>
-            </div>
-          </div>
-          <div class="col-12 col-md-2">
-            <div class="card">
-              <img
-                src="img/destonillador.jpg"
-                class="card-img-top"
-                alt="..."
-              />
-              <div class="card-body">
-                <h6 class="card-title">
-                  <a href="">Descripción del producto</a>
-                </h6>
-                <p class="">Precio</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-md-2">
-            <div class="card">
-              <img
-                src="img/candado.jpg"
-                class="card-img-top"
-                alt="..."
-              />
-              <div class="card-body">
-                <h6 class="card-title">
-                  <a href="">Descripción del producto</a>
-                </h6>
-                <p class="">Precio</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-md-2">
-            <div class="card">
-              <img
-                src="img/destonillador.jpg"
-                class="card-img-top"
-                alt="..."
-              />
-              <div class="card-body">
-                <h6 class="card-title">
-                  <a href="">Descripción del producto</a>
-                </h6>
-                <p class="">Precio</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-md-2">
-            <div class="card">
-              <img
-                src="img/candado.jpg"
-                class="card-img-top"
-                alt="..."
-              />
-              <div class="card-body">
-                <h6 class="card-title">
-                  <a href="">Descripción del producto</a>
-                </h6>
-                <p class="">Precio</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-md-2">
-            <div class="card">
-              <img
-                src="img/destonillador.jpg"
-                class="card-img-top"
-                alt="..."
-              />
-              <div class="card-body">
-                <h6 class="card-title">
-                  <a href="">Descripción del producto</a>
-                </h6>
-                <p class="">Precio</p>
-              </div>
-            </div>
-          </div>
-        </div>
             </div>
             <div class="carousel-item">
-                <div class="row">
-          <div class="col-12 col-md-2">
-            <div class="card">
-              <img
-                src="img/candado.jpg"
-                class="card-img-top"
-                alt="..."
-              />
-              <div class="card-body">
-                <h6 class="card-title">
-                  <a href="">Descripción del producto</a>
-                </h6>
-                <p class="">Precio</p>
+              <div class="row">
+                <div class="col-12 col-md-2">
+                  <div class="card">
+                    <img src="img/candado.jpg" class="card-img-top" alt="..." />
+                    <div class="card-body">
+                      <h6 class="card-title">
+                        <a href="">Descripción del producto</a>
+                      </h6>
+                      <p class="">Precio</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-2">
+                  <div class="card">
+                    <img
+                      src="img/destonillador.jpg"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <h6 class="card-title">
+                        <a href="">Descripción del producto</a>
+                      </h6>
+                      <p class="">Precio</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-2">
+                  <div class="card">
+                    <img src="img/candado.jpg" class="card-img-top" alt="..." />
+                    <div class="card-body">
+                      <h6 class="card-title">
+                        <a href="">Descripción del producto</a>
+                      </h6>
+                      <p class="">Precio</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-2">
+                  <div class="card">
+                    <img
+                      src="img/destonillador.jpg"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <h6 class="card-title">
+                        <a href="">Descripción del producto</a>
+                      </h6>
+                      <p class="">Precio</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-2">
+                  <div class="card">
+                    <img src="img/candado.jpg" class="card-img-top" alt="..." />
+                    <div class="card-body">
+                      <h6 class="card-title">
+                        <a href="">Descripción del producto</a>
+                      </h6>
+                      <p class="">Precio</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-2">
+                  <div class="card">
+                    <img
+                      src="img/destonillador.jpg"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <h6 class="card-title">
+                        <a href="">Descripción del producto</a>
+                      </h6>
+                      <p class="">Precio</p>
+                    </div>
+                  </div>
+                </div>
               </div>
-            </div>
-          </div>
-          <div class="col-12 col-md-2">
-            <div class="card">
-              <img
-                src="img/destonillador.jpg"
-                class="card-img-top"
-                alt="..."
-              />
-              <div class="card-body">
-                <h6 class="card-title">
-                  <a href="">Descripción del producto</a>
-                </h6>
-                <p class="">Precio</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-md-2">
-            <div class="card">
-              <img
-                src="img/candado.jpg"
-                class="card-img-top"
-                alt="..."
-              />
-              <div class="card-body">
-                <h6 class="card-title">
-                  <a href="">Descripción del producto</a>
-                </h6>
-                <p class="">Precio</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-md-2">
-            <div class="card">
-              <img
-                src="img/destonillador.jpg"
-                class="card-img-top"
-                alt="..."
-              />
-              <div class="card-body">
-                <h6 class="card-title">
-                  <a href="">Descripción del producto</a>
-                </h6>
-                <p class="">Precio</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-md-2">
-            <div class="card">
-              <img
-                src="img/candado.jpg"
-                class="card-img-top"
-                alt="..."
-              />
-              <div class="card-body">
-                <h6 class="card-title">
-                  <a href="">Descripción del producto</a>
-                </h6>
-                <p class="">Precio</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-md-2">
-            <div class="card">
-              <img
-                src="img/destonillador.jpg"
-                class="card-img-top"
-                alt="..."
-              />
-              <div class="card-body">
-                <h6 class="card-title">
-                  <a href="">Descripción del producto</a>
-                </h6>
-                <p class="">Precio</p>
-              </div>
-            </div>
-          </div>
-        </div>
             </div>
             <div class="carousel-item">
-                <div class="row">
-          <div class="col-12 col-md-2">
-            <div class="card">
-              <img
-                src="img/candado.jpg"
-                class="card-img-top"
-                alt="..."
-              />
-              <div class="card-body">
-                <h6 class="card-title">
-                  <a href="">Descripción del producto</a>
-                </h6>
-                <p class="">Precio</p>
+              <div class="row">
+                <div class="col-12 col-md-2">
+                  <div class="card">
+                    <img src="img/candado.jpg" class="card-img-top" alt="..." />
+                    <div class="card-body">
+                      <h6 class="card-title">
+                        <a href="">Descripción del producto</a>
+                      </h6>
+                      <p class="">Precio</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-2">
+                  <div class="card">
+                    <img
+                      src="img/destonillador.jpg"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <h6 class="card-title">
+                        <a href="">Descripción del producto</a>
+                      </h6>
+                      <p class="">Precio</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-2">
+                  <div class="card">
+                    <img src="img/candado.jpg" class="card-img-top" alt="..." />
+                    <div class="card-body">
+                      <h6 class="card-title">
+                        <a href="">Descripción del producto</a>
+                      </h6>
+                      <p class="">Precio</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-2">
+                  <div class="card">
+                    <img
+                      src="img/destonillador.jpg"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <h6 class="card-title">
+                        <a href="">Descripción del producto</a>
+                      </h6>
+                      <p class="">Precio</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-2">
+                  <div class="card">
+                    <img src="img/candado.jpg" class="card-img-top" alt="..." />
+                    <div class="card-body">
+                      <h6 class="card-title">
+                        <a href="">Descripción del producto</a>
+                      </h6>
+                      <p class="">Precio</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-2">
+                  <div class="card">
+                    <img
+                      src="img/destonillador.jpg"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <h6 class="card-title">
+                        <a href="">Descripción del producto</a>
+                      </h6>
+                      <p class="">Precio</p>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-          <div class="col-12 col-md-2">
-            <div class="card">
-              <img
-                src="img/destonillador.jpg"
-                class="card-img-top"
-                alt="..."
-              />
-              <div class="card-body">
-                <h6 class="card-title">
-                  <a href="">Descripción del producto</a>
-                </h6>
-                <p class="">Precio</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-md-2">
-            <div class="card">
-              <img
-                src="img/candado.jpg"
-                class="card-img-top"
-                alt="..."
-              />
-              <div class="card-body">
-                <h6 class="card-title">
-                  <a href="">Descripción del producto</a>
-                </h6>
-                <p class="">Precio</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-md-2">
-            <div class="card">
-              <img
-                src="img/destonillador.jpg"
-                class="card-img-top"
-                alt="..."
-              />
-              <div class="card-body">
-                <h6 class="card-title">
-                  <a href="">Descripción del producto</a>
-                </h6>
-                <p class="">Precio</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-md-2">
-            <div class="card">
-              <img
-                src="img/candado.jpg"
-                class="card-img-top"
-                alt="..."
-              />
-              <div class="card-body">
-                <h6 class="card-title">
-                  <a href="">Descripción del producto</a>
-                </h6>
-                <p class="">Precio</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-md-2">
-            <div class="card">
-              <img
-                src="img/destonillador.jpg"
-                class="card-img-top"
-                alt="..."
-              />
-              <div class="card-body">
-                <h6 class="card-title">
-                  <a href="">Descripción del producto</a>
-                </h6>
-                <p class="">Precio</p>
-              </div>
-            </div>
-          </div>
-        </div>
-            </div>
-          </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev"
+          >
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Previous</span>
           </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next"
+          >
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Next</span>
           </button>
@@ -2140,17 +2438,20 @@
               <li class="ms-3">
                 <a class="link-dark" href="#"
                   ><svg class="bi" width="24" height="24">
-                    <use xlink:href="#twitter" /></svg></a>
+                    <use xlink:href="#twitter" /></svg
+                ></a>
               </li>
               <li class="ms-3">
                 <a class="link-dark" href="#"
                   ><svg class="bi" width="24" height="24">
-                    <use xlink:href="#instagram" /></svg></a>
+                    <use xlink:href="#instagram" /></svg
+                ></a>
               </li>
               <li class="ms-3">
                 <a class="link-dark" href="#"
                   ><svg class="bi" width="24" height="24">
-                    <use xlink:href="#facebook" /></svg></a>
+                    <use xlink:href="#facebook" /></svg
+                ></a>
               </li>
             </ul>
           </div>

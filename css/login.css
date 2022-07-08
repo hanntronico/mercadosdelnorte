@@ -1,0 +1,16 @@
+.form-login {
+  margin: 0 auto;
+}
+
+.label-custom {
+  border: 1px solid;
+  padding: 12px;
+  background-color: #f5f5f5;
+  width: 100%;
+}
+
+.btn-iniciar {
+  background-color: #3b6fae;
+  color: #fff;
+  font-weight: 600;
+}

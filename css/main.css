@@ -1,5 +1,15 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   background: #f5f5f5;
+}
+
+.carousel-inner .card {
+  border: none;
 }
 
 .container-custom {
@@ -54,3 +64,89 @@ body {
   color: #999999;
   font-weight: 500;
 }
+.contador-span {
+  margin-top: -32px;
+  margin-left: 55px;
+}
+
+.bi-cart {
+  font-size: 16px;
+  margin-left: 16px;
+}
+
+/***** Estilos para el navbar de los departamentos *******/
+.menu {
+  background-color: #131f49;
+  color: #fff;
+  margin-bottom: 28px;
+  padding: 5px 0;
+}
+
+.menu .contenedor-botones-menu {
+  display: none;
+  justify-content: space-between;
+}
+
+.menu .contenedor-botones-menu button {
+  font-size: 20px;
+  color: #fff;
+  padding: 10px 20px;
+  border: 1px solid transparent;
+  display: inline-block;
+  cursor: pointer;
+  background: none;
+}
+
+.menu .contenedor-botones-menu button:hover {
+  border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.menu .contenedor-botones-menu .btn-menu-cerrar {
+  display: none;
+}
+
+.menu .contenedor-botones-menu .btn-menu-cerrar.active {
+  display: inline-block;
+}
+
+.menu .contenedor-enlaces-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu .btn-departamento {
+  color: #fff;
+  padding: 7px;
+  display: flex;
+  align-items: flex-end;
+  cursor: default;
+}
+
+.menu .btn-departamento i {
+  margin-left: 20px;
+  margin-right: 10px;
+  position: relative;
+  bottom: 3px;
+}
+
+.menu .btn-departamento span {
+  display: block;
+}
+
+.contenedor-grid {
+  position: relative;
+}
+
+.grid {
+  width: 100%;
+  position: absolute;
+  background: #f3f3f3;
+  top: 5px;
+  z-index: 1000;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr;
+  grid-template-areas: "categorias subcategorias subcategorias subcategorias";
+}
+/***** Fin de Estilos para el navbar de los departamentos *******/
